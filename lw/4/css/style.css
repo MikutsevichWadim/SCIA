@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root {
+	--bg-transparancy: 0.75;
+	--main-color-params: 0, 255, 157;
+	--main-color: rgb(var(--main-color-params));
+}
+
+* {
+	color: white;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	text-decoration: none;
+
+	font-family: Nunito, sans-serif;
+}
+
+body {
+	background-attachment: fixed;
+	background-image: url('../img/background.png');
+	background-position-x: center;
+	background-size: 100%;
+	background-size: cover;
+}
+
+div.block,
+nav,
+footer {
+	background-color: rgba(0, 0, 0, var(--bg-transparancy));
+	backdrop-filter: blur(15px);
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+div.block,
+footer {
+	padding: 20px;
+}
+
+header {
+	text-align: center;
+}
+
+div.block {
+	margin-bottom: 20px;
+	border: 1px solid rgb(1);
+}
+
+img,
+div {
+	border-radius: 20px;
+}
+
+nav {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	z-index: 1000;
+}
+
+nav ul {
+	display: inherit;
+	list-style-type: none;
+}
+
+nav ul li {
+	margin: 20px;
+}
+
+nav ul li:not(:last-child) {
+	margin-right: 10px;
+}
+
+main {
+	margin: 50px;
+	margin-top: 112px;
+}
+
+footer {
+	background-color: transparent;
+	background-image: linear-gradient(180deg,
+			rgba(0, 0, 0, .5),
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 1)
+	);
+	min-height: 250px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: 'center';
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: rgba(var(--main-color-params), var(--bg-transparancy));
+}
+
+a {
+	color: var(--main-color);
+	transition-duration: 0.25s;
+}
+
+a:hover {
+	color: rgb(0, 255, 255);
+}
+
+button {
+	color: var(--main-color);
+}
+
+nav a {
+	color: white;
+}
+
+.flex {
+	display: flex;
+}
+
+.project-icon {
+	margin-right: 20px;
+}
+
+table.prog_lang_top {
+	border-collapse: collapse;
+}
+
+table.prog_lang_top td, th {
+	padding: 3px;
+	border: 1px solid ;
+}
+
+#block3 {
+	background-color: rgba(var(--main-color-params), 0.25);
+}
+
+.width75vw {
+	width: 75vw;
+}

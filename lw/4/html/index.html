@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Mikutsevich Wadim">
+	<meta name="description" content="Main page">
+	<link rel="stylesheet" href="/css/style.css"> <!-- 1: внешний стиль -->
+	<title>Микуцевич Вадим</title>
+	<!-- 2: внутренний стиль -->
+	<style>
+		@import url('/css/style.css'); /* 3: подключение стилей */
+		.block {
+			border: 5px solid var(--main-color);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/html/index.html">Главная</a></li>
+			<li><a href="/html/projects.html">Проекты</a></li>
+		</ul>
+	</nav>
+	<main>
+		<header>
+			<h1>HTML + CSS</h1>
+		</header>
+		<div class="block">
+			<figure>
+				<picture>
+					<img class="profile-photo" src="/img/profile.png" alt="profile-photo">
+				</picture>
+				<figcaption>Микуцевич Вадим</figcaption>
+			</figure>
+		</div>
+		<div class="block width75vw">
+			<h2>Этот блок занимает 75% ширины видимой области</h2>
+		</div>
+		<!-- 4: встроенный стиль -->
+		<div class="block" style="max-width: 400px; background-color: #333;">
+			<h2>Форматирование текста</h2>
+			<p>Тэг абзаца заключает текст в блок, находящий на новой строке, и по стандарту имеет внешние отступы от других элементов. Следующий элемент за этим тегом будет также начинатся с новой строки.</p>
+			<p>Тэг i: <i>Курсивный шрифт</i></p>
+			<p>Тэг b: <b>Жирный шрифт</b></p>
+			<p>Тэг sup: Обычный текст<sup>Верхний индекс</sup></p>
+			<p>Тэг sub: Обычный текст<sub>Нижний индекс</sub></p>
+			<pre>Тэг pre: Текст есть 
+				как        пишется
+			</pre>
+			<p>Тэг del: <del>Тег удалённого текста</del></p>
+			<p>Тэг ins: <ins>Тег вставленного текста</ins></p>
+		</div>
+		<div class = "block">
+			<h2>Медиа</h2>
+			<h2>Изображение</h2>
+			<figure>
+				<picture>
+					<img class="profile-photo" src="/img/html.png" alt="profile-photo">
+				</picture>
+				<figcaption>Логотип HTML</figcaption>
+			</figure>
+			<h2>Видео</h2>
+			<video src="/video/video.mp4" controls height="500px"></video>
+			<h2>Аудио</h2>
+			<audio src="/audio/audio.mp3" controls></audio>
+		</div>
+		<div class="block" id="block3">
+			<h2>История популярности <br> языков программирования</h2>
+			<table class="prog_lang_top">
+				<tr>
+					<td rowspan="2"><sub>ЯП</sub>\<sup>Год</sup></td>
+					<td colspan="7">Место в рейтинге TIOBE по годам</td>
+				</tr>
+				<tr>
+					<td>2012</td>
+					<td>2014</td>
+					<td>2016</td>
+					<td>2018</td>
+					<td>2020</td>
+					<td>2022</td>
+					<td>2024</td>
+				</tr>
+				<tr>
+					<td>Python</td>
+					<td colspan="3">5</td>
+					<td>4</td>
+					<td>3</td>
+					<td colspan="2">1</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>2</td>
+					<td>1</td>
+					<td colspan="3">2</td>
+					<td colspan="2">2</td>
+				</tr>
+				<tr>
+					<td>C++</td>
+					<td colspan="4">3</td>
+					<td colspan="2">4</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Java</td>
+					<td>1</td>
+					<td>2</td>
+					<td colspan="3">1</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</table>
+			Топ 4 языка программирования на 2024 год по рейтингу TIOBE:
+			<ol>
+				<li>Python</li>
+				<li>C</li>
+				<li>C++</li>
+				<li>Java</li>
+			</ol>
+			<h2>Библиотеки</h2>
+			<ul>
+				<li><a href="https://kivy.org" target="_blank">Kivy</a></li>
+				<li><a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a></li>
+				<li><a href="https://python-telegram-bot.org" target="_blank">python-telegram-bot</a></li>
+			</ul>
+			<h2>Проекты (<a href="https://github.com/MikutsevichWadim">GitHub</a>)</h2>
+			<ol>
+				<li><a href="/html/projects.html">SkillThread (Python)</a></li>
+				<li><a href="/html/projects.html">Эффективность в доме (Python)"</a></li>
+				<li><a href="/html/projects.html">Консольное приложение "Гостиница (C#)"</a></li>
+			</ol>
+		</div>
+		<div class="block">
+			<h2>Форма входа</h2>
+			<form action="post">
+				<table>
+					<tbody><tr>
+						<td>
+							<label for="0">Email: </label>
+						</td>
+						<td>
+							<input type="email" name="email" id="0">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="1">Пароль: </label>
+						</td>
+						<td>
+							<input type="password" name="password" id="1">
+						</td>
+					</tr>
+				</tbody></table>
+				<table>
+					<tbody><tr>
+						<td>
+							<input type="checkbox" name="remember" id="2">
+						</td>
+						<td>
+							<label for="2">запомнить</label>
+						</td>
+						<td>
+							<input type="button" value="Вход">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="hide_password" id="3">
+						</td>
+						<td>
+							<label for="3">скрытый</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center">
+							<a href="#">Забыл пароль</a> |
+							<a href="#">Регистрация</a>
+						</td>
+					</tr>
+				</tbody></table>
+			</form>
+		</div>
+		<div class="block">
+			<h2>Спецсимволы</h2>
+			<pre>
+			&#8260;	дробная черта
+			&#8722;	знак минус
+			&#8804;	меньше или равно
+			&#8805;	больше или равно
+			&#8776;	приблизительно равно (асимптотически равно)
+			&#8800;	не равно
+			&#8801;	совпадает с
+			&#8730;	квадратный корень (радикал)
+			&#8734;	знак бесконечность
+			&#8721;	знак суммирования
+			&#8719;	знак произведения
+			&#8706;	частичный дифференциал
+			&#8747;	интеграл
+			</pre>
+		</div>
+	</main>
+	<footer>
+		<h2>Подвал страницы</h2>
+		<p><a href="http://jigsaw.w3.org/css-validator/">Валидация HTML</a></p>
+		<p><a href="http://jigsaw.w3.org/css-validator/">Валидация CSS</a></p>
+	</footer>
+</body>
+</html>
