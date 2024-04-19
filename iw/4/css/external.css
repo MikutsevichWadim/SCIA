@@ -1,0 +1,7 @@
+/* 1 это внешняя таблица стилей */
+
+h3 {
+	color: red;
+	text-align: justify; /* выравнивание по ширине */
+	text-decoration: line-through; /* перечеркнутый текст */
+}
