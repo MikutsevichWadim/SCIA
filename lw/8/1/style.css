@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+
+    --line-width: 3px;
+    --sep-size: 20px;
+    --sep-size-half: 10px;
+}
+
+h2 {
+    text-transform: uppercase ;
+    text-align: center;
+    border-bottom: var(--line-width) solid #B3312D;
+}
+
+.mt {
+    margin: var(--sep-size) 0 0 0;
+}
+
+.mv {
+    margin: var(--sep-size) 0;
+}
+
+.info-collection {
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    margin: var(--sep-size);
+}
+
+select,
+input {
+    border: var(--line-width) solid #C3B99C;
+    background-color: #FFFBE8;
+    border-radius: 3px;
+    color: gray;
+    padding: 8px;
+}
+
+form {
+    width: 750px;
+}
+
+.formblock {
+    background-color: #EFEFEF;
+    padding: var(--sep-size);
+    margin-top: var(--sep-size);
+    border-radius: 10px;
+}
+
+.formblockbody {
+    background-color: white;
+    padding: 20px;
+    border: var(--line-width) dashed gray
+}
+
+.formblockbody div.info-collection:not(:first-child):not(:last-child) {
+    margin: 20px 0;
+}
+
+label {
+    margin: 5px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+
+.jc-center {
+    justify-content: center;
+}
+
+.admission-month {
+    margin-right: 10px;
+}
+
+/* button */
+
+.custom-button {
+    display: inline-block;
+    padding: 12.5px 0;
+    background-color: #FFC107;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    background-color: #FFD700;
+}
+
+.custom-button:hover::before,
+.custom-button:focus::before {
+    border-right-color: #FFD700;
+}
+
+.custom-button:hover::after,
+.custom-button:focus::after {
+    border-left-color: #FFD700;
+}
+
+.custom-button::before,
+.custom-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    z-index: 1;
+    transition: border-color 0.3s;
+}
+
+.custom-button::before {
+    left: -40px;
+    border-right-color: #FFC107;
+}
+
+.custom-button::after {
+    right: -40px;
+    border-left-color: #FFC107;
+}
