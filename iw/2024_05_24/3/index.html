@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+</head>
+<body>
+    <input type="text" id="input0" value="3"><br>
+    <input type="text" id="input1" value="-5"><br>
+    <input type="text" id="input2" value="7"><br>
+    <input type="text" id="input3" value="1"><br>
+    <input type="text" id="input4" value="10"><br>
+    <input type="text" id="input5" value="9"><br>
+    <input type="text" id="input6" value="-2"><br>
+    <br>
+    <button onclick="task()">Click me</button>
+    <br>
+    <p>Исходный массив: <span id="output0"></span></p>
+    <p>Максимальный элемент: <span id="output1"></span></p>
+    <p>Последний элемент: <span id="output2"></span></p>
+    <p>Измененный массив: <span id="output3"></span></p>
+    <script>
+        function task() {
+            var arr = new Array();
+            for (var i = 0; i < 7; i++) {
+                arr[i] = parseInt(document.getElementById("input" + i).value);
+            }
+
+            document.getElementById("output0").innerHTML = arr.toString();
+
+            document.getElementById("output1").innerHTML = Math.max(...arr).toString();
+
+            document.getElementById("output2").innerHTML = arr[arr.length - 1]
+
+            arr.pop()
+            document.getElementById("output3").innerHTML = arr.toString();
+        }
+    </script>
+</body>
+</html>
