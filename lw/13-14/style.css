@@ -1,0 +1,29 @@
+@import url("form.css");
+
+section {
+    border: 5px solid blue;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    color: green;
+    border: 0px solid green;
+}
+
+/* задание 3 */
+
+.classOnHover {
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    border-width: 1px;
+
+    transition: all 1s;
+}
