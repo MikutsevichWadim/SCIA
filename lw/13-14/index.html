@@ -7,60 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="task1">
-        <h3>Задание 1</h3>
-        <div>
-    
-            <p>Микуцевич В. В.</p>
-        </div>
-        <div>
-            <a href="http://ggpk.by">любимый сайт</a>
-    
-        </div>
-        <div>
-    
-            <img src="R.jpg" alt="" width="300px">
-        </div>
-    </section>
+    <div>
 
-    <section class="task2">
-        <h3>Задание 2</h3>
-        <div>
-            <button id="bGetUrl">Посмотреть URL</button>
-        </div>
-        <div>
-            <span id="url"></span>
-        </div>
-        <div>
-            Удалить по нажатию
-            <img src="R.jpg" id="deleteThisImage" width="100px">
-        </div>
-    </section>
-    
-    <section class="task3">
-        <h3>Задание 3</h3>
-        <div>
-    
-            <p>Микуцевич В. В.</p>
-        </div>
-        <div>
-            <a href="http://ggpk.by" id="favoriteSite">любимый сайт</a>
-    
-        </div>
-        <div>
-    
-            <img src="R.jpg" alt="" width="300px">
-        </div>
-    </section>
+        <p>Микуцевич В. В.</p>
+    </div>
+    <a href="http://ggpk.by">любимый сайт</a>
 
-     <section class="task4">
-        <h3>Задание 4</h3>
-        <span id="PCName"></span>
-        <button id="getPCName">получить имя компьютера</button>
-     </section>
+    <div>
 
-     <section class="task5">
-        <form id="education-job-form" action="" method="post">
+        <img src="R.jpg" alt="" width="300px">
+    </div>
+    <div>
+        <button id="bGetUrl">Посмотреть URL</button>
+    </div>
+    <div>
+        <span id="url"></span>
+    </div>
+    <button id="bGetPCName">получить имя компьютера</button>
+
+     <section>
+        <form id="education-job-form">
             <h2>Образование и работа</h2>
             <div class="info-collection mv">
                 <label for="education">* Информация об образовании</label>
@@ -85,7 +51,15 @@
                 <div class="formblockbody">
                     <div class="info-collection">
                         <label for="institution">* Наименование учебного заведения</label>
-                        <input type="text" id="institution" name="institution" required>
+                        <input type="text" id="institution" name="institution">
+                    </div>
+                    <div class="info-collection">
+                        <label for="email">* Ваш EMail</label>
+                        <input type="text" placeholder="Ваш email" id="email" name="email" required>
+                    </div>
+                    <div class="info-collection">
+                        <label for="max-length-field">* Поле с максимальной длиной</label>
+                        <input type="text" id="max-length-field" required>
                     </div>
                     <div class="info-collection">
                         <label for="region">* Регион</label>
@@ -148,11 +122,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex jc-center">
-                    <button type="submit" class="custom-button mt">добавить ещё</button>
-                </div>
             </div>
         </form>
+        <div class="flex jc-center">
+            <button class="custom-button mt" id="pusk">добавить ещё</button>
+        </div>
+        <div id="error-message" style="color: red;"></div>
         
      </section>
 

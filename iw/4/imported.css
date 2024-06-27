@@ -1,7 +1,7 @@
 /* 4 это импортируемая таблица стилей */
 
 body {
-	background-image: url("/img/любая\ картинка.jpg");
+	background-image: url("любая\ картинка.jpg");
 	background-repeat: repeat-x;  /* повторение картинки по горизонтали */
 	backdrop-filter: blur(10px) brightness(2); 
 	font-family: Arial, Helvetica, sans-serif;  /* установка семейства шрифта */
